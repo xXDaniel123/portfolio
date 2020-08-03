@@ -1,0 +1,151 @@
+.portfolio-item {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px !important;
+    border-radius: 12px;
+
+}
+
+.projects-container {
+    text-align: center;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.item-header,
+.item-sub-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+
+}
+
+.item-image {
+    max-width: 300px;
+    box-shadow: 0px 5px 14px -6px rgba(77, 77, 77, 0.82);
+    border-radius: 8px;
+    transition: transform 0.25s;
+    cursor: pointer;
+}
+
+.mac {
+    position: absolute;
+    top: 24vh;
+    max-width: 600px;
+    left: calc(50vw - 50px);
+    opacity: 0;
+    animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+
+}
+
+.macbook {
+    position: relative;
+    top: 50vh;
+    max-width: 500px;
+    left: calc(50vw - 250px);
+    display: block;
+    text-align: center;
+    animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 2;
+}
+
+.navbar-shrink {
+    background-color: rgba(245, 245, 247 0.72) !important;
+}
+
+.item-image:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 5px 14px -6px rgba(77, 77, 77, 0.92);
+
+}
+
+.masthead {
+    width: auto !important;
+    height: 70vh !important;
+}
+
+.header-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    padding: 14px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.modal-background {
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+    background-color: rgb(204 204 204 / 72%);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.modal-container {
+    position: absolute;
+    top: 100vh;
+    box-sizing: inherit;
+    z-index: 11;
+    width: 100%;
+    display: none;
+}
+
+.modal-image {
+    max-width: 400px;
+    z-index: 12;
+    box-shadow: 0px 5px 14px -6px rgba(77, 77, 77, 0.82);
+    border-radius: 8px;
+    transition: transform 0.25s;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.modal-details-container {
+
+    align-items: center;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: calc(300px);
+    transform: translate(-50%);
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.message-body {
+    width: 90%;
+    height: 150px;
+}
+
+
+
+/* Key frames for the entering animation */
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+
+
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 1;
+
+    }
+}
